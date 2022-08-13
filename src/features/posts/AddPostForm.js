@@ -48,7 +48,7 @@ const AddPostForm = () => {
   ));
 
   return (
-    <section>
+    <section id="add-post">
       <h2>Add a New Post</h2>
       <form>
         <label htmlFor="postTitle">Post Title:</label>

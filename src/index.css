@@ -64,7 +64,13 @@ main {
   /* margin: auto; */
 }
 
-section {
+#add-post {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 1em;
+}
+
+#main-section {
   margin-top: 1em;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));

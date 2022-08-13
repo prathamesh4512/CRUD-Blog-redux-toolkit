@@ -83,7 +83,7 @@ const EditPostForm = () => {
   };
 
   return (
-    <section>
+    <section id="add-post">
       <h2>Edit Post</h2>
       <form>
         <label htmlFor="postTitle">Post Title:</label>
