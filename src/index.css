@@ -60,12 +60,14 @@ nav a:focus {
 }
 
 main {
-  max-width: 500px;
-  margin: auto;
+  /* max-width: 500px; */
+  /* margin: auto; */
 }
 
 section {
   margin-top: 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 article {
@@ -96,7 +98,11 @@ form {
 }
 
 textarea {
-  height: 200px;
+  height: 150px;
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
 }
 
 .postCredit {
@@ -124,6 +130,7 @@ textarea {
   border: none;
   color: #000;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 .deleteButton {

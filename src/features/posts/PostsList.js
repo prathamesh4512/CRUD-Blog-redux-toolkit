@@ -5,6 +5,7 @@ import {
   getPostsError,
   fetchPosts,
 } from "./postsSlice";
+import { fetchUsers } from "../users/usersSlice";
 import { useEffect } from "react";
 import PostsExcerpt from "./PostsExcerpt";
 
@@ -18,12 +19,13 @@ const PostsList = () => {
   useEffect(() => {
     if (postStatus === "idle") {
       dispatch(fetchPosts());
+      dispatch(fetchUsers());
     }
   }, [postStatus, dispatch]);
 
   let content;
   if (postStatus === "loading") {
-    content = <p>"Loading..."</p>;
+    content = <p>Loading...</p>;
   } else if (postStatus === "succeeded") {
     const orderedPosts = posts
       .slice()
