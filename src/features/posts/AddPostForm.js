@@ -32,7 +32,7 @@ const AddPostForm = () => {
         setTitle("");
         setContent("");
         setUserId("");
-        navigate("/");
+        navigate("/CRUD-Blog-redux-toolkit");
       } catch (err) {
         console.error("Failed to save the post", err);
       } finally {

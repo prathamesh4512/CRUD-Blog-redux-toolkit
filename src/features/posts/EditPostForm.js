@@ -51,7 +51,7 @@ const EditPostForm = () => {
         setTitle("");
         setContent("");
         setUserId("");
-        navigate(`/post/${postId}`);
+        navigate(`/CRUD-Blog-redux-toolkit/post/${postId}`);
       } catch (err) {
         console.error("Failed to save the post", err);
       } finally {
@@ -74,7 +74,7 @@ const EditPostForm = () => {
       setTitle("");
       setContent("");
       setUserId("");
-      navigate("/");
+      navigate("/CRUD-Blog-redux-toolkit");
     } catch (err) {
       console.error("Failed to delete the post", err);
     } finally {
