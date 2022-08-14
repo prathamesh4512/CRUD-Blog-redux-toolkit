@@ -60,11 +60,6 @@ nav a:focus {
   text-decoration: underline;
 }
 
-main {
-  /* max-width: 500px; */
-  /* margin: auto; */
-}
-
 #add-post {
   max-width: 500px;
   margin: auto;
